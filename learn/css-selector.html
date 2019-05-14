@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>css选择器</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <style type="text/css">
+        *{
+            background-color: darkcyan;
+        }
+        div,p {
+            height: 100px;
+        }
+        /**
+        #代表
+        id 选择器
+        /*#div_1{*/
+        /*height: 120px;*/
+        /*background-color: cadetblue;*/
+        /*}*/
+        /*#div_2{*/
+        /*background-color: blueviolet;*/
+        /*}*/
+        /**
+        类选择器 .代表class
+         */
+        .div_1_class {
+            height: 120px;
+            background-color: cadetblue;
+        }
+
+        .div_2_class {
+            background-color: blueviolet;
+        }
+        p{
+            background-color: black;
+        }
+    </style>
+    <!--<link type="text/css" rel="stylesheet" href="custom.css">-->
+</head>
+<!--<body style="background-color: pink;height: 1000px">-->
+<body>
+<span>全部选择器</span>
+<div id="div_1" class="div_1_class"></div>
+<div id="div_2" class="div_2_class"></div>
+<p id="p_1"></p>
+</body>
+</html>

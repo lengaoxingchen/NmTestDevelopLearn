@@ -1,0 +1,38 @@
+一、CSS-介绍
+1.定义：
+    1.1.层叠样式表（Cascading Style Sheet）决定了HTML元素以什么样子的外观展示
+2.引入方式
+    外部样式表：<link rel="stylesheet" type="text/css" href="custom.css">
+    内部样式表：<style type="text/css">
+                    table{background-color:blueviolet;}
+                </style>
+    内联样式：<table style="background-color:red"></table>
+
+二、CSS语法
+    选择器 {样式：属性值；样式：属性值；}
+    table {background：red；font-size：large；}
+
+    1.类选择器
+        <table class="tclass">
+        .tclass
+    2.id选择器
+        <table id="选择器">
+        #选择器
+    3.元素选择器
+        <table><table>
+        Table
+    4.所有元素选择器
+        <div></div><table></table><span></span>
+        *
+    5.与选择器
+        <table></table><span></span>
+        table.span
+    6.元素内 选择器
+        <table><td></td></table>
+        div span
+    7.父元素选择器
+        <table><thead></thead></table>
+        table>thead
+    8.同级选择器
+        <table></table><span></span>
+        table+span
