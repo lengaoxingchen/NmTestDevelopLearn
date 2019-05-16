@@ -13,7 +13,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Css介绍">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2530">
+            <state relative-caret-position="229">
               <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
@@ -71,17 +71,6 @@
               <item name="NmTestDevelopLearn" type="b2602c69:ProjectViewProjectNode" />
               <item name="NmTestDevelopLearn" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NmTestDevelopLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NmTestDevelopLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NmTestDevelopLearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NmTestDevelopLearn" type="462c0819:PsiDirectoryNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -94,7 +83,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML4 File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558001925500" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558002365769" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -136,7 +125,7 @@
       <workItem from="1557916223392" duration="1426000" />
       <workItem from="1557972315201" duration="9240000" />
       <workItem from="1557997442927" duration="487000" />
-      <workItem from="1557998844294" duration="2264000" />
+      <workItem from="1557998844294" duration="3001000" />
     </task>
     <task id="LOCAL-00001" summary="更新样式选择器">
       <created>1557996284087</created>
@@ -149,9 +138,9 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18442000" />
+    <option name="totallyTimeSpent" value="19179000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -161,31 +150,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1396" y="46" width="1382" height="768" extended-state="0" />
+    <frame x="1363" y="6" width="1382" height="768" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49865228" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="JRebel" order="7" side_tool="true" />
+      <window_info id="JRebel" order="7" sideWeight="0.5013477" side_tool="true" weight="0.25718608" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4969743" weight="0.32861635" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" sideWeight="0.6406959" visible="true" weight="0.6188976" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49546143" visible="true" weight="0.6188976" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5045386" side_tool="true" visible="true" weight="0.6188976" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32913387" />
-      <window_info anchor="bottom" id="Graph Database Console" order="12" weight="0.32913387" />
-      <window_info anchor="bottom" id="JRebel Console" order="13" side_tool="true" />
-      <window_info anchor="bottom" id="JRebel Executor" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50378215" side_tool="true" weight="0.39055118" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32913387" />
+      <window_info anchor="bottom" id="Graph Database Console" order="11" weight="0.32913387" />
+      <window_info anchor="bottom" id="JRebel Console" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Executor" order="13" />
+      <window_info anchor="bottom" id="TODO" order="14" sideWeight="0.49621785" weight="0.41574803" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -238,7 +227,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Css介绍">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
+        <state relative-caret-position="229">
           <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
