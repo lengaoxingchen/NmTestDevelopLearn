@@ -35,9 +35,6 @@
         table>thead
     8.同级选择器
         <table></table><span></span>
-<<<<<<< HEAD
-        table+span
-=======
         table+span
     9.属性选择器
         <span id="span1"></span>
@@ -116,4 +113,3 @@
         cover:将图片填充整个元素整个背景
         contain:元素包含整个图片
  CSS边框样式
->>>>>>> '选择器更新'
