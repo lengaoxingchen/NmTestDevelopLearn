@@ -5,6 +5,28 @@
     <title>css选择器</title>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <style type="text/css">
+        /** {*/
+            /*background-color: darkcyan;*/
+        /*}*/
+
+        html,body{
+            height: 100%;
+
+        }
+        div {
+            height: 50%;
+            /*background: url("images/timg1.jpg") no-repeat;*/
+            /*background-color: gray;*/
+            background-image: url("images/timg.jpg");
+            background-repeat: no-repeat;
+            /*background-attachment: fixed;*/
+            /*background-position: right bottom;*/
+            background-size: 100% 100%;
+        }
+        #table_1{
+
+        }
+
         *{
             background-color: darkcyan;
         }
@@ -24,6 +46,26 @@
         /**
         类选择器 .代表class
          */
+        /*.div_1_class {*/
+            /*height: 120px;*/
+            /*background-color: cadetblue;*/
+        /*}*/
+
+        /*.div_2_class {*/
+            /*background-color: blueviolet;*/
+        /*}*/
+
+        /*p {*/
+            /*background-color: black;*/
+        /*}*/
+
+        /*a:link {*/
+            /*color: red;*/
+        /*}*/
+
+        /*a:visited {*/
+            /*color: cornflowerblue;*/
+        /*}*/
         .div_1_class {
             height: 120px;
             background-color: cadetblue;
@@ -41,7 +83,26 @@
 <!--<body style="background-color: pink;height: 1000px">-->
 <body>
 <span>全部选择器</span>
-<div id="div_1" class="div_1_class"></div>
+<div id="div_1" class="div_1_class">
+    <!--<p>-->
+        <!--<button>提交</button>-->
+    <!--</p>-->
+</div>
+
+
+<!--<div id="div_2" class="div_2_class">-->
+    <!--<a href="http://www.baidu.com">点我</a>-->
+
+<!--</div>-->
+
+<table id="table_1">
+    <tr>
+        <th>id</th>
+    </tr>
+    <tr>
+        <th>name</th>
+    </tr>
+</table>
 <div id="div_2" class="div_2_class"></div>
 <p id="p_1"></p>
 </body>

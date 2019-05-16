@@ -35,4 +35,85 @@
         table>thead
     8.同级选择器
         <table></table><span></span>
+<<<<<<< HEAD
         table+span
+=======
+        table+span
+    9.属性选择器
+        <span id="span1"></span>
+        <input id="input1"></span>
+        [id]
+    10.属性值选择器
+        <span id="span1"></span>
+        <input id="input1"></input>
+        [id=span1]
+    11.属性值模糊选择器
+        <span id="span1"></span>
+        [id~=span1]
+    12.属性值头索引选择器
+        <span id="span1"></span>
+        [id|=sp]
+    13.属性头索引选择器V-3
+        <span id="span1"></span>
+        <input id="input"></input>
+        [id^=sp]    id以sp开头
+    14.属性尾索引选择器V-3
+        <span id="span1"></span>
+        <input id="input"></input>
+        [id$=an1] id以an1结尾
+    15.属性模糊选择器
+        <span id="span1"></span>
+        [id*=an] id中包含an的属性
+
+    16.未访问选择器
+        <a link=http://www.baidu.com>
+        :link
+    17.访问选择器
+        <a link=http://www.baidu.com>
+        :visited
+    18.激活选择器
+        <a link=http://www.baidu.com>
+        :active
+    19.悬停选择器
+        <a link=http://www.baidu.com>
+        :hover
+ CSS-尺寸样式
+    1.width:
+        auto:浏览器自动推送
+        px:通过像素来设置元素的宽度
+        百分比:根据百分比设置元素的宽度
+    2.height:(auto,百分比是针对父元素继承)
+        auto:浏览器自动推送
+        px:同你过像素来设置元素的看度
+        百分比:根据百分比设置元素的宽度
+ CSS-背景样式
+    background-color:设置背景颜色
+        颜色的三种格式
+            16进制:#000000
+            RGB:RGB(0,0,0)
+            英文名称:black
+            table{background:black}
+    background-image:设置背景图片
+        如果只设置图片,默认是水平和垂直都会平铺
+        table{background-image:""}
+    background-repeat:设置背景平铺方向
+        no-repeat
+        repeat-x
+        repeat-y
+    background-attachment:背景图片是否随着页面的其余部分滚动
+        fixed:固定
+        scroll:滚动
+    background-position:背景图像的位置
+        使用该属性时一定要将background-attachment的属性值一定是fixed
+        top left
+        x% y%
+        xpx ypx
+
+    background-size:北京图片的尺寸
+        auto:图片原始宽度和高度
+        px:通过设置像素定义图片的看度和高度
+        percent:根据所在元素宽高比例设置图片大小
+        cover:将图片填充整个元素整个背景
+        contain:元素包含整个图片
+ CSS边框样式
+>>>>>>> '选择器更新'
