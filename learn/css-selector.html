@@ -23,9 +23,18 @@
             /*background-position: right bottom;*/
             background-size: 100% 100%;
         }
-        #table_1{
 
-        }
+        /*对应关系:border-style/border-width/border-color都可以设置多值*/
+        /*位置1,位置2,位置3,位置4:上->右->下->左*/
+        /*位置1,位置2,位置3:上->左右->下*/
+        /*属性1,属性2:上下->左右*/
+        /*属性1:上下左右*/
+
+        /*table_1{*/
+            /*border-width: 10px 20px;*/
+            /*border-style: dashed solid inset double;*/
+            /*border-color: red blue green black;*/
+        /*}*/
 
         /**
         #代表
@@ -60,17 +69,38 @@
         /*a:visited {*/
             /*color: cornflowerblue;*/
         /*}*/
+        .parent{
+            height: 200px;
+            width: 300px;
+            /*margin: 20px 30px 40px 50px;*/
+            position: absolute;
+        }
+        .child{
+            height: 100px;
+            width: 100px;
+            /*margin: 20px 30px 40px 50px;*/
+            top: 100px;
+            left: 100px;
+            position: relative;
+        }
+        /*同级元素之间的间隔*,规则同border-style/*/
+        /*.margin input{*/
+            /*padding: 4px;*/
+        /*}*/
+
+
+
     </style>
     <!--<link type="text/css" rel="stylesheet" href="custom.css">-->
 </head>
 <!--<body style="background-color: pink;height: 1000px">-->
 <body>
-<span>全部选择器</span>
-<div id="div_1" class="div_1_class">
-    <!--<p>-->
-        <!--<button>提交</button>-->
-    <!--</p>-->
-</div>
+<!--<span>全部选择器</span>-->
+<!--<div id="div_1" class="div_1_class">-->
+    <!--&lt;!&ndash;<p>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button>提交</button>&ndash;&gt;-->
+    <!--&lt;!&ndash;</p>&ndash;&gt;-->
+<!--</div>-->
 
 
 <!--<div id="div_2" class="div_2_class">-->
@@ -78,13 +108,25 @@
 
 <!--</div>-->
 
-<table id="table_1">
-    <tr>
-        <th>id</th>
-    </tr>
-    <tr>
-        <th>name</th>
-    </tr>
-</table>
+<!--<table id="table_1">-->
+    <!--<tr>-->
+        <!--<th>id</th>-->
+    <!--</tr>-->
+    <!--<tr>-->
+        <!--<th>name</th>-->
+    <!--</tr>-->
+<!--</table>-->
+
+
+<div id="div_1" class="div_1_class">
+
+</div>
+<div class="parent">
+    <input class="input_1" value="请输入用户名">
+    <div class="child">
+
+    </div>
+</div>
+
 </body>
 </html>

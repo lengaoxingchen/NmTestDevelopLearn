@@ -113,3 +113,78 @@
         cover:将图片填充整个元素整个背景
         contain:元素包含整个图片
  CSS边框样式
+    border-style:
+        dotted:点线边框
+        dashed:虚线边框
+        solid:实现边框
+        double:双边框,两个边框的宽度和border-width的值相同
+        groove:3D沟槽边框,效果取决于边框的颜色值
+        ridge:3D脊边框.效果取决于边框的颜色值
+        inset:一个3D嵌入边框.效果取决于边框的颜色值
+        outset:一个3D突出边框.效果取决于边框的颜色值
+    border-width:
+        px:通过像素设置边框的宽度
+        关键字:thick/medium(默认值)和thin
+    border-color:
+        颜色三种格式:
+            16进制:#0000
+            RGB:RGB(0,0,0)
+            英文名称:black
+    对应关系:border-style/border-width/border-color都可以设置多值
+        位置1,位置2,位置3,位置4:上->右->下->左
+        位置1,位置2,位置3:上->左右->下
+        属性1,属性2:上下->左右
+        属性1:上下左右
+ 内边距样式
+    padding:
+    padding-bottom
+    padding-left
+    padding-right
+    padding-top
+        auto:浏览器自动推送
+        px:通过像素来设置元素的宽度
+        百分比:根据百分比设置元素的宽度
+
+ 外边距样式
+    margin:
+    margin-bottom
+    margin-left
+    margin-right
+    margit-top
+        auto:浏览器自动推送
+        px:通过像素来设置元素的宽度
+        百分比:根据百分比设置元素的宽度
+
+ 定位样式
+    position
+        static:默认,不定位
+        absolute:绝对元素定位
+        relative:相对于定位
+        fixed:绝对定位元素,相对于浏览器
+    top
+    right
+    bottom
+    left
+        auto:默认值0
+        px:通过像素设置位置
+        百分比:通过百分比设置位置
+
+  文本样式
+    color
+        颜色三种格式
+            16进制
+            RGB
+            英文名称
+    text-align:
+        left:默认值.设置文本水平对齐方式居左
+        right:设置文本水平对齐方式居右
+        center:设置文本水平对齐方式居中
+
+
+  行间距:
+    line-height
+
+
+    padding:内边距
+    position:相对父元素
+    margin:外边距 相对统计元素
