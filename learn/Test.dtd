@@ -1,8 +1,0 @@
-<!DOCTYPE person
-        [
-                <!ELEMENT person(name,age,sex) >
-                <!ELEMENT name(#PCDTA)>
-                <!ELEMENT age(#PCDTA)>
-                <!ELEMENT sex(#PCDTA)>
-                ]
-        >

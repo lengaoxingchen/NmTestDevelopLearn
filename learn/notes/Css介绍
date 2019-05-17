@@ -187,4 +187,4 @@
 
     padding:内边距
     position:相对父元素
-    margin:外边距 相对统计元素
+    margin:外边距 相对同级元素
