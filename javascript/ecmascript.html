@@ -69,13 +69,92 @@
         // function f() {
         //     // let $3="wewqe"
         // }
-        //逻辑运算符 || && !
-        if("abc"||""){
+        //逻辑运算符 || && !  任何与NaN参与的条件运算符都返回false
+        // 一元运算符 + -  + 一元运算度可以进行类型转换,结果为number型
+        var i2 = +"2";
+        alert(typeof (i2) + "" + i2);
+        var i3 = -"2";
+        alert(typeof (i3) + "" + i3);
+        var i9 = +undefined;
+        alert(typeof (i9) + "" + i9);
+        //算数运算符  + -  * / % ++ --   运算时,运算符左右两侧运算之先转化为num类型后 进行运算,undefine转换为number为NaN,除了+号的String类型
+        //如果+号一侧运算一侧为String类型,那么相当于字符串的拼接
+        var i4 = 1 + 1;   //结果为2
+        alert(typeof (i4) + "" + i4);
+        var i5 = 1 + true;    //结果为2
+        alert(typeof (i5) + "" + i5);
+        var i6 = false + true;  //结果为1
+        alert(typeof (i6) + "" + i6);
+        var i7 = 1 + null;  //结果为1
+        alert(typeof (i7) + "" + i7);
+        var i8 = 1 + undefined;  //结果为NaN
+        alert(typeof (i8) + "" + i8);
+
+        var i10 = 1 + "abc";  //结果为1abc
+        alert(typeof (i10) + "" + i10)
+
+        var i12 = null + "abc";  //结果为1abc
+        alert(typeof (i12) + "" + i12)
+        var i13 = undefined + "abc";  //结果为1abc
+        alert(typeof (i13) + "" + i13)
+
+        //比较运算符  都是将比较运算符两侧的运算值后进行比较
+
+        //false
+        if(1>2){
             alert(true)
         }else{
             alert(false)
         }
 
+        //false
+        if(1>true){
+            alert(true)
+        }else{
+            alert(false)
+        }
+
+        //true
+        if(true>false){
+            alert(true)
+        }else{
+            alert(false)
+        }
+
+        //true
+        if(true>null){
+            alert(true)
+        }else{
+            alert(false)
+        }
+
+        //false
+        if(undefined>=null){
+            alert(true)
+        }else{
+            alert(false)
+        }
+
+        //false
+        if(undefined<=null){
+            alert(true)
+        }else{
+            alert(false)
+        }
+
+        //false
+        //Nan
+        if(1>="b"){
+            alert(true)
+        }else{
+            alert(false)
+        }
+        //true
+        if(1>="1"){
+            alert(true)
+        }else{
+            alert(false)
+        }
 
     </script>
 
