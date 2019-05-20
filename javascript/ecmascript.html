@@ -71,90 +71,152 @@
         // }
         //逻辑运算符 || && !  任何与NaN参与的条件运算符都返回false
         // 一元运算符 + -  + 一元运算度可以进行类型转换,结果为number型
-        var i2 = +"2";
-        alert(typeof (i2) + "" + i2);
-        var i3 = -"2";
-        alert(typeof (i3) + "" + i3);
-        var i9 = +undefined;
-        alert(typeof (i9) + "" + i9);
+        // var i2 = +"2";
+        // alert(typeof (i2) + "" + i2);
+        // var i3 = -"2";
+        // alert(typeof (i3) + "" + i3);
+        // var i9 = +undefined;
+        // alert(typeof (i9) + "" + i9);
         //算数运算符  + -  * / % ++ --   运算时,运算符左右两侧运算之先转化为num类型后 进行运算,undefine转换为number为NaN,除了+号的String类型
-        //如果+号一侧运算一侧为String类型,那么相当于字符串的拼接
-        var i4 = 1 + 1;   //结果为2
-        alert(typeof (i4) + "" + i4);
-        var i5 = 1 + true;    //结果为2
-        alert(typeof (i5) + "" + i5);
-        var i6 = false + true;  //结果为1
-        alert(typeof (i6) + "" + i6);
-        var i7 = 1 + null;  //结果为1
-        alert(typeof (i7) + "" + i7);
-        var i8 = 1 + undefined;  //结果为NaN
-        alert(typeof (i8) + "" + i8);
-
-        var i10 = 1 + "abc";  //结果为1abc
-        alert(typeof (i10) + "" + i10)
-
-        var i12 = null + "abc";  //结果为1abc
-        alert(typeof (i12) + "" + i12)
-        var i13 = undefined + "abc";  //结果为1abc
-        alert(typeof (i13) + "" + i13)
+        //如果+号一侧运算一侧为String类型,那么相当于字符串的拼接,如果比较运算符两侧都是字符串,那么字符串直接比较,比较方式按位字符逐一比较
+        // var i4 = 1 + 1;   //结果为2
+        // alert(typeof (i4) + "" + i4);
+        // var i5 = 1 + true;    //结果为2
+        // alert(typeof (i5) + "" + i5);
+        // var i6 = false + true;  //结果为1
+        // alert(typeof (i6) + "" + i6);
+        // var i7 = 1 + null;  //结果为1
+        // alert(typeof (i7) + "" + i7);
+        // var i8 = 1 + undefined;  //结果为NaN
+        // alert(typeof (i8) + "" + i8);
+        //
+        // var i10 = 1 + "abc";  //结果为1abc
+        // alert(typeof (i10) + "" + i10);
+        //
+        // var i12 = null + "abc";  //结果为1abc
+        // alert(typeof (i12) + "" + i12);
+        // var i13 = undefined + "abc";  //结果为1abc
+        // alert(typeof (i13) + "" + i13);
 
         //比较运算符  都是将比较运算符两侧的运算值后进行比较
 
         //false
-        if(1>2){
-            alert(true)
-        }else{
-            alert(false)
-        }
+        // if(1>2){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
 
         //false
-        if(1>true){
-            alert(true)
-        }else{
-            alert(false)
-        }
+        // if(1>true){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
 
         //true
-        if(true>false){
-            alert(true)
-        }else{
-            alert(false)
-        }
+        // if(true>false){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
 
         //true
-        if(true>null){
-            alert(true)
-        }else{
-            alert(false)
-        }
+        // if(true>null){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
 
         //false
-        if(undefined>=null){
-            alert(true)
-        }else{
-            alert(false)
-        }
+        // if(undefined>=null){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
 
         //false
-        if(undefined<=null){
-            alert(true)
-        }else{
-            alert(false)
-        }
+        // if(undefined<=null){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
 
+        //字符串
         //false
-        //Nan
-        if(1>="b"){
-            alert(true)
-        }else{
-            alert(false)
-        }
+        //Nan:任何与NAN比较的结果都是false.字符串b不是转化为ascii码,而是直接转换为number,转换失败未NaN
+        // if(1>="b"){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
+        // //true
+        // if(1>="1"){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
+
+        //为false.如果比较运算符两侧都是字符串,那么尽兴字符串直接比较,比较方式按位字符逐一比较
+        // if("123">"22"){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
+
         //true
-        if(1>="1"){
-            alert(true)
-        }else{
-            alert(false)
-        }
+        // if("zzz">"11"){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
+
+        //等性运算符   == != === !==  NaN 不等于时返回true 不确定类型之前最好用全等,等于会将比较的数据进行number类型转化
+        //=== !==不急性类型转化直接比较
+        //== !=不同类型进行比较
+        //null  结果为false
+        // if(0==null){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
+        //
+        //
+        // //false
+        // if(NaN == NaN){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
+        //
+        // //true
+        // if(NaN != NaN){
+        //     alert(true)
+        // }else{
+        //     alert(false)
+        // }
+        //
+        //
+        // //false
+        // if("111" === 111){
+        //     alert(true)
+        // }else {
+        //     alert(false)
+        // }
+        //
+        // //true
+        // if("111" !== 111){
+        //     alert(true)
+        // }else {
+        //     alert(false)
+        // }
+        //
+        // //true
+        // if(true !== 1){
+        //     alert(true)
+        // }else {
+        //     alert(false)
+        // }
 
     </script>
 

@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+}
+
+head, body {
+    height: 550px;
+}
+
+.header, .content, .footer {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header {
+    height: 10%;
+    /*background-color: darkcyan;*/
+    background-image: url("../image/sky.jpg");
+}
+.header p{
+    top: 30%;
+    position: absolute;
+    left: 10%;
+    font-size: 25px;
+}
+
+.content {
+    height: 80%;
+    /*background-color: purple;*/
+    background-image: url("../image/night.jpg");
+}
+
+.footer {
+    height: 10%;
+    /*background-color: pink;*/
+    background-image: url("../image/sky.jpg");
+}
+.footer p{
+    position: absolute;
+    left: 43%;
+    font-size: 25px;
+    color: blueviolet;
+}
+
+.content-desc {
+    height: 60%;
+    width: 28%;
+    top: 40%;
+    left: 13%;
+    position: absolute;
+    /*background-color: chocolate;*/
+}
+.content .content-desc{
+    text-shadow: 5px 5px 5px white;   /*阴影*/
+    color: pink;
+    line-height: 30px;
+}
+
+
+.content-form {
+    height: 60%;
+    width: 30%;
+    top: 30%;
+    left: 53%;
+    position: absolute;
+    /*background-color: burlywood;*/
+}
+
+.content-from-header {
+    width: 90%;
+    margin: 5%;
+    /*background-color: purple;*/
+}
+
+.content-from-header .title {
+    border-bottom: solid;
+    /*border-color: red;*/
+
+}
+
+.content-form-body {
+    height: 90%;
+    /*background-color: aqua;*/
+    margin: 5%;
+}
+
+.content-form-body .content {
+    height: 12%;
+    margin-top: 5%;
+}
+
+.content-form-body .content input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+
+.content-form-body .content button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    background-color: cadetblue;
+    font-size: 20px;
+}
+
+p {
+    color: white;
+    font-family: cursive;  /**字体**/
+    font-size: 25px;
+}

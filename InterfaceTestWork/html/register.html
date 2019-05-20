@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>用户信息</title>
+    <style type="text/css">
+        @import "../css/register.css";
+    </style>
+</head>
+<body>
+<div class="user-modal">
+    <div class="user-modal-container">
+        <div class="switcher">
+            <a>注册新用户</a>
+        </div>
+        <div id="signup">
+            <div class="form">
+                <p class="fieldset">
+                    <label class="image-replace verifycode" for="signup-verifycode">邀请码</label>
+                    <input class="full-width has-padding has-border" id="signup-verifycode" name="verifycode" type="text"  placeholder="输入邀请码">
+                </p>
+                <p class="fieldset">
+                    <label class="image-replace username" for="signup-username">用户名</label>
+                    <input class="full-width has-padding has-border" id="signup-username" name="name" type="text" placeholder="输入用户名">
+                </p>
+
+                <p class="fieldset">
+                    <label class="image-replace email" for="signup-email">邮箱</label>
+                    <input class="full-width has-padding has-border" name="email" id="signup-email" type="email" placeholder="输入mail">
+                </p>
+
+                <p class="fieldset">
+                    <label class="image-replace password" for="signup-password">密码</label>
+                    <input class="full-width has-padding has-border" id="signup-password" name="password" type="password"  placeholder="输入密码">
+                </p>
+                <p class="fieldset">
+                    <label class="image-replace password2" for="signup-password2">重复输入密码</label>
+                    <input class="full-width has-padding has-border" id="signup-password2" name="password2" type="password"  placeholder="重复输入密码">
+                </p>
+
+
+                <p class="fieldset">
+                    <input type="checkbox" onclick="document.getElementById('accept-terms').disabled=!this.checked;" id="accept-terms">
+                    <label for="accept-terms">我已阅读并同意 <a href="./agreement.html" target="_blank">用户协议</a></label>
+                </p>
+
+
+                <input type="hidden" name="action" value="signup">
+                <p class="fieldset">
+                    <input class="full-width2" type="submit" value="注册" onclick=jump()>
+                </p>
+                <p class="fieldset">
+                    <a href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E9%82%80%E8%AF%B7%E7%A0%81&oq=%25E5%25A6%2582%25E4%25BD%2595%25E8%258E%25B7%25E5%258F%2596%25E9%2582%2580%25E8%25AF%25B7%25E7%25A0%2581&rsv_pq=f3a77c2a00a29154&rsv_t=455be2nfEj5X3e9%2BTwjgq%2BRbPcdUJdH3tlOoE5%2FrVNujpsBuxKxQDM2CFPU&rqlang=cn&rsv_enter=0">如何获取邀请码？</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    function jump(){
+        window.location.href="./registerSuccess.html";
+    }
+</script>
