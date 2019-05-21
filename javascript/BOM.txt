@@ -1,0 +1,17 @@
+BOM (Browner Object Model)
+
+1.概念
+    浏览器对象模型
+
+2.对象属性
+    history:同浏览器回退与前进一致
+    location:地址
+    top:返回页面顶部
+
+3.对象方法
+    alert:弹窗
+    prompt:交互窗口
+    setInterval:重复执行
+    clearInterval:清除重复执行
+    setTimeout:定时器
+    clearTimeout:清楚定时器

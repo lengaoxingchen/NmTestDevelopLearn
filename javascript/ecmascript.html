@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
         "http://www.w3.org/TR/html4/loose.dtd">
 
-<html>
+<html lang="en">
 <head>
     <title>Title</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -15,7 +15,7 @@
         // alert(111)
         //匈牙利标记法
         // 首字符必须是变量的类型:s1
-        var $1 = "dsad";
+        //var $1 = "dsad";
         //原始数据类型
         //java:byte,short,int,long,float,double,char,boolean
         //javascript:number,string,boolean,Null,undefined
@@ -218,19 +218,70 @@
         //     alert(false)
         // }
 
+        //window.onload 页面加载之后打开
+        window.onload = function () {
+            //var div_1 = document.getElementById("div_1");
+            //var div_1 = document.getElementsByName("div_1");
+            //var div_1 = document.getElementsByClassName("div_1");
+            // var div_1 = document.getElementsByTagName("div");
+            // for (var i = 0; i < div_1.length; i++) {
+            //     div_1[i].style.backgroundColor = "red";
+            // }
+
+            //第一种
+            // document.getElementById("but_1").addEventListener("click",function () {
+            //     console.log("我被点击了")
+            // });
+            //第二种
+            //冒泡  点击子元素会触发父元素mouseenter   需要使用事件捕获
+
+            document.getElementById("div_1").addEventListener("mouseenter", function () {
+                console.log("mouseenter:div_1")
+            });
+            document.getElementById("div_2").addEventListener("mouseover", function (ev) {
+                console.log("mouseenter:div_2");
+                ev.stopPropagation()//事件停止
+
+            });
+            document.body.addEventListener("keydown", function (ev) {
+                // if (ev.key == 65) {
+                //     document.getElementById("but_1").click()
+                // }
+                // alert()
+            });
+            var iId = window.setInterval(function () {
+                alert("setInterval")
+            }, 5000);
+            var tId = window.setTimeout(function () {
+                alert("setTimeout")
+            }, 10000);
+
+            document.getElementById("but_1").addEventListener("click",function () {
+                clearTimeout(tId);
+                clearInterval(iId);
+            });
+        }
+
     </script>
 
     <!--<script type="text/javascript" src="main.js"></script>-->
-    //错误引入方式
     <!--<script type="text/javascript" src="main.js">-->
     <!--alert(111)-->
     <!--</script>-->
 </head>
 <body>
-<p>ecmascript</p>
+<div id="div_1"  class="div_1" style="height: 100px;background-color:darkgreen">
+    <div style="height: 50px;width:300px;background-color: blanchedalmond"></div>
+</div>
+<div id="div_2"  class="div_2" style="height: 100px;background-color: rebeccapurple">
+    <div style="height: 50px;width:300px;background-color: black"></div>
+</div>
+
+<button id="but_1" type="button">点我</button>
 </body>
 </html>
 
-<script type="text/javascript">
-
-</script>
+<!--<script type="text/javascript">-->
+<!--var div_1 = document.getElementById("div_1");-->
+<!--div_1.style.backgroundColor = "red";-->
+<!--</script>-->
